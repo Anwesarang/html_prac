@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables in html</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+            border: 2 px solid black;
+        }
+
+        th {
+            background-color: #f4f4f4;
+            color: #333;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Tables in html</h1>
+    <table>
+        <!-- Head of the table -->
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Salary</th>
+            </tr>
+
+        </thead>
+        <!-- Body of the table -->
+        <tbody>
+            <tr>
+                <td>Anwesha</td>
+                <TD>SDE</TD>
+                <td>70000</td>
+            </tr>
+            <tr>
+            <td>Rachana</td>
+            <td>Nurse</td>
+            <td>50000</td>
+            </tr>
+            <tr>
+                <td>Thank</td>
+                <td colspan="2">You</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>
