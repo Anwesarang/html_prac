@@ -1,0 +1,91 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: url('../img/bg.png') no-repeat center center/cover;
+    color: #fff;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #D32F2F;
+    padding: 10px 20px;
+}
+
+header .logo img {
+    width: 150px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li {
+    margin: 0 10px;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header ul li a:hover {
+    color: #FFD54F;
+}
+
+/* Main section styling */
+main {
+    text-align: center;
+    margin-top: 100px;
+}
+
+main p {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+main input {
+    margin-top: 20px;
+    padding: 15px 20px;
+    width: 60%;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    background-color: #B71C1C;
+    padding: 20px 0;
+    font-size: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+    header ul li {
+        margin: 0 5px;
+    }
+
+    main input {
+        width: 80%;
+    }
+}
